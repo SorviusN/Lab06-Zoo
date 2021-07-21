@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab06_Zoo.Interfaces;
 
 namespace Lab06_Zoo.Classes
 {
-	class Wolf : LandAnimal
+	class Wolf : LandAnimal, IPredator
 	{
 
 		public override string Name { get; set; } = "Wolf";
+
+		public void Kill()
+		{
+			Console.WriteLine($" The {Name} kills its prey.");
+		}
 
 		public override void Movement()
 		{
@@ -19,6 +25,11 @@ namespace Lab06_Zoo.Classes
 		public override void Sound()
 		{
 			Console.WriteLine($"The {Name} howls at the moon");
+		}
+
+		public void stalkPrey()
+		{
+			Console.WriteLine($"The {Name} is stalking its prey.");
 		}
 	}
 

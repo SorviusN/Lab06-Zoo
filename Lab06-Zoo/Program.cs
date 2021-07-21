@@ -1,5 +1,6 @@
 ﻿using System;
 using Lab06_Zoo.Classes;
+using Lab06_Zoo.Interfaces;
 
 namespace Lab06_Zoo
 {
@@ -11,6 +12,7 @@ namespace Lab06_Zoo
 			Wolf wolf = new Wolf();
 			wolf.Movement();
 			wolf.Sound();
+			wolf.stalkPrey();
 
 			Snake snek = new Snake();
 			snek.Sound();
@@ -21,7 +23,7 @@ namespace Lab06_Zoo
 			Crab crab = new Crab();
 			crab.Sound();
 
-			Birb birb = new Birb();
+			Eagle birb = new Eagle();
 			birb.Sound();
 			birb.Sleep();
 
