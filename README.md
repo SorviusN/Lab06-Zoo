@@ -19,3 +19,5 @@ to them.
 
 - Concrete: Classes that will not be abstract. They are generally at the bottom of the child list (A wolf is a land animal, which is a mammal. Wolf is concrete.) 
 
+## Interfaces
+- Interfaces are pre-built layouts of code that you are able to assign to any heirarchy within your classes. They are flexible and nice to implement when you want to assign some characteristics to a class that span across your hierarchy.
