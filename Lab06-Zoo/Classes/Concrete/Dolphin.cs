@@ -17,9 +17,9 @@ namespace Lab06_Zoo.Classes
 			Console.WriteLine($"The {Name} is swimming");
 		}
 
-		public override void Sound()
+		public override string Sound()
 		{
-			Console.WriteLine($"The {Name} is calling and has {Fins} fins.");
+			return ($"The {Name} is calling and has {Fins} fins.");
 		}
 	}
 }

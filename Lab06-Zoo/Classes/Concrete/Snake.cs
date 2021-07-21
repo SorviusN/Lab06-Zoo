@@ -15,9 +15,9 @@ namespace Lab06_Zoo.Classes
 			Console.WriteLine($"The {Name} slithers on ground");
 		}
 
-		public override void Sound()
+		public override string Sound()
 		{
-			Console.WriteLine($"The {Name} is singing {Name} jazz");
+			return ($"The {Name} is singing {Name} jazz");
 		}
 	}
 }
