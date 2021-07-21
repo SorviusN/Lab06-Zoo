@@ -7,7 +7,7 @@ using Lab06_Zoo.Interfaces;
 
 namespace Lab06_Zoo.Classes
 {
-	class Eagle : AvianAnimal, IPredator, IFly
+	public class Eagle : AvianAnimal, IPredator, IFly
 	{
 		public override string Name { get; set; } = "Birb";
 		public string AverageAltitude { get; set; } = "High";
@@ -32,9 +32,9 @@ namespace Lab06_Zoo.Classes
 			Console.WriteLine("The Eagle perches on its roost.");
 		}
 
-		public override void Sound()
+		public override string Sound()
 		{
-			Console.WriteLine($"The {Name} chirps and whistles a song");
+			return($"The {Name} chirps and whistles a song");
 		}
 
 		public void stalkPrey()
@@ -42,9 +42,9 @@ namespace Lab06_Zoo.Classes
 			Console.WriteLine("The eagle stalks its prey (fish) before eating.");
 		}
 
-		public void TakeOff()
+		public string TakeOff()
 		{
-			Console.WriteLine($"The eagle takes off to fly. Its average altitude is {AverageAltitude}");
+			return ($"The eagle takes off to fly. Its average altitude is {AverageAltitude}");
 		}
 	}
 }

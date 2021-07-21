@@ -23,7 +23,7 @@ namespace Lab06_Zoo.Classes
 		}
 
 		// Must be defined in child classes ( Necessary property).
-		public abstract void Sound();
+		public abstract string Sound();
 
 		public abstract void Movement(); //this could also be a prop.
 

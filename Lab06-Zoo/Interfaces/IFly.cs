@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lab06_Zoo.Interfaces
 {
-	interface IFly
+	interface IFly // Creating an interface that can be used across all of the classes.
 	{
 		string AverageAltitude { get; set; }
 
 		void Land();
 
-		void TakeOff();
+		string TakeOff();
 
 		void Perch();
 	}

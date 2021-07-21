@@ -22,9 +22,9 @@ namespace Lab06_Zoo.Classes
 			Console.WriteLine($"The {Name} walks on {Legs} legs.");
 		}
 
-		public override void Sound()
+		public override string Sound()
 		{
-			Console.WriteLine($"The {Name} howls at the moon");
+			return ($"The {Name} howls at the moon");
 		}
 
 		public void stalkPrey()
